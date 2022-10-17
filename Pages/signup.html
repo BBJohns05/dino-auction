@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Auction</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Dino Auction</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Explore <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="upcoming.html">Upcoming Auctions</a></li>
+            <li><a href="live.html">Live Auction</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Sign Up</h3>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="form-group">
+      <label for="Mailing Address">Mailing Address:</label>
+      <input type="Mailing Address" class="form-control" id="Mailing Address">
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Billing</button>
+      <div id="demo" class="collapse">
+        <div class="form-group">
+          <label for="Credit Card Number">Credit Card Number:</label><br>
+          <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard1" id="creditCard1" required/>
+          -
+          <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard2" id="creditCard2" required/>
+          -
+          <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard3" id="creditCard3" required/>
+          -
+          <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard4" id="creditCard4" required/>
+          <br />
+          <div class="form-group">
+            <label for="Expire">Expiration Date:</label><br>
+          <input class="Expire" name="expiry" id="expiry" type="month" required/>
+      </div>
+      <div class="form-group">
+        <label for="Verifcation Number">Verifcation Number</label>
+        <input type="Verifcation Number" maxlength="4"class="form-control" id="Verifcation Number">
+    </div>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="Username">Username:</label>
+      <input type="Username" class="form-control" id="Username">
+    </div>
+    <div class="form-group">
+      <label for="Password">Password:</label>
+      <input type="Password" class="form-control" id="Password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" ><a href="index.html">Dig In</a></button>
+  </form>
+</div>
+
+</body>
+</html>
