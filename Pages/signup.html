@@ -43,21 +43,21 @@
 </nav>
   
 <div class="container">
-  <h3>Sign Up</h3>
+  <h1>Sign Up</h1>
   <form action="/action_page.php">
     <div class="form-group">
-      <label for="email">Email address:</label>
+      <label for="email" class="text">Email address:</label>
       <input type="email" class="form-control" id="email">
     </div>
     <div class="form-group">
-      <label for="Mailing Address">Mailing Address:</label>
+      <label for="Mailing Address"class="text">Mailing Address:</label>
       <input type="Mailing Address" class="form-control" id="Mailing Address">
     </div>
     <div class="form-group">
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Billing</button>
+      <button type="button" class="btn btn-info"data-toggle="collapse" data-target="#demo">Billing</button>
       <div id="demo" class="collapse">
         <div class="form-group">
-          <label for="Credit Card Number">Credit Card Number:</label><br>
+          <label for="Credit Card Number"class="text">Credit Card Number:</label><br>
           <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard1" id="creditCard1" required/>
           -
           <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard2" id="creditCard2" required/>
@@ -67,30 +67,52 @@
           <input class="inputCard" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard4" id="creditCard4" required/>
           <br />
           <div class="form-group">
-            <label for="Expire">Expiration Date:</label><br>
+            <label for="Expire"class="text">Expiration Date:</label><br>
           <input class="Expire" name="expiry" id="expiry" type="month" required/>
       </div>
       <div class="form-group">
-        <label for="Verifcation Number">Verifcation Number</label>
+        <label for="Verifcation Number"class="text">Verifcation Number</label>
         <input type="Verifcation Number" maxlength="4"class="form-control" id="Verifcation Number">
 
     </div>
     </div>
     </div>
     <div class="form-group">
-      <label for="Username">Username:</label>
+      <label for="Username"class="text">Username:</label>
       <input type="Username" class="form-control" id="Username">
     </div>
     <div class="form-group">
-      <label for="Password">Password:</label>
+      <label for="Password"class="text">Password:</label>
       <input type="Password" class="form-control" id="Password">
     </div>
     <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
+      <label class="text"><input type="checkbox"> Remember me</label>
     </div>
-    <button type="submit" ><a href="index.html">Dig In</a></button>
   </form>
-</div>
+  <style>
+    .container {
+      height: 200px;
+      position: relative;
+
+    }
+    
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      height: 50px;
+      width: 50px;
+    }
+    </style>
+    
+    <div class="container">
+      <div class="center">
+        <button><a href="index.html">Dig In</a></button>
+      </div>
+    </div>
 
 </body>
 </html>
