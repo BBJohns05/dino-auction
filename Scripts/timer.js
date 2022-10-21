@@ -18,7 +18,7 @@ var x = setInterval(function () {
 	// Display the result in the element with id="demo"
 	document.getElementById(
 		'timer'
-	).innerHTML = `Time left for auction: ${days} days, ${hours} hours, and ${minutes} minutes `;
+	).innerHTML = `${days} days, ${hours} hours, and ${minutes} minutes `;
 
 	// If the count down is finished, replace the time with an alert
 	if (distance < 0) {
