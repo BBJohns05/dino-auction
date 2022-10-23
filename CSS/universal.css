@@ -49,3 +49,20 @@ p {
 	width: 30%;
 	height: 30%;
 }
+.phone{
+    color:grey;
+    text-align: center;
+}
+.email{
+    color: grey;
+    text-align: center;
+ }
+.thanks1{
+    color:grey;
+    clear: right;
+
+}
+ .thanks2{
+    color:grey;
+    clear: right;
+} 
